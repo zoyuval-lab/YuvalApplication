@@ -1,27 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    android:id="@+id/main">
-
-
+    android:background="#F4F6F9"
+    android:padding="20dp">
 
     <TextView
-        android:id="@+id/btn_click_me"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/my_message"
-        android:textSize="25sp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="@string/galileo_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E" />
 
 
-    <Button
-        android:id="@+id/btnClick"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/ivGalileo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/gali"
+        android:contentDescription="Galileo Galilei" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/click_here" />
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_margin="8dp">
+
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/galileo_subtitle"
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="8dp" />
+
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/galileo_description"
+            android:textSize="16sp"
+            android:textColor="#37474F"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
 </LinearLayout>
-
