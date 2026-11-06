@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">YuvalProject</string>
-    <string name="click_here">click_here</string>
-    <string name="galileo_title">גלילאו גליליי</string>
-    <string name="galileo_subtitle">אבי המדע המודרני</string>
-    <string name="galileo_description">גלילאו גליליי היה פיזיקאי, אסטרונום ופילוסוף איטלקי. הוא נאבק על האמת המדעית גם כשהיא עמדה בסתירה לתפיסות המקובלות בתקופתו, והוכיח את חשיבות החקירה והספקנות.י
-</string>
+    <string name="israel_title">מה זה להיות ישראלי?</string>
+    <string name="israel_subtitle">הבית שלנו</string>
+    <string name="israel_description">להיות ישראלי זה להיות חלק ממדינה עם היסטוריה מיוחדת תרבות עשירה ואנשים שתמיד דואגים אחד לשני. ישראל היא הבית שלנו.</string>
+    <string name="israel_button">עם ישראל חי!</string>
+    <string name="israel_flag_description">דגל ישראל</string>
+    <string name="jerusalem_description">ירושלים</string>
 </resources>

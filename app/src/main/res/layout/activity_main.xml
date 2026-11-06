@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#F4F6F9"
     android:padding="20dp">
 
@@ -11,54 +12,73 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"
-        android:text="@string/galileo_title"
+        android:text="@string/israel_title"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:textColor="#1A237E" />
-
+        android:textColor="#1A237E"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:id="@+id/ivGalileo"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/gali"
-        android:contentDescription="Galileo Galilei" />
+        android:id="@+id/ivFlag"
+        android:layout_width="220dp"
+        android:layout_height="140dp"
+        android:src="@drawable/israel_flag"
+        android:contentDescription="@string/israel_flag_description"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/israel_subtitle"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ivFlag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tvDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#FFFFFF"
-        android:padding="16dp"
-        android:layout_margin="8dp">
+        android:text="@string/israel_description"
+        android:textSize="17sp"
+        android:textColor="#37474F"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <ImageView
+        android:id="@+id/ivJerusalem"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:src="@drawable/jerusalem"
+        android:contentDescription="@string/jerusalem_description"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/tvSubtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/galileo_subtitle"
-            android:layout_gravity="right"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#0D47A1"
-            android:layout_marginBottom="8dp" />
+    <Button
+        android:id="@+id/btnIsrael"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/israel_button"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ivJerusalem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-
-        <TextView
-            android:id="@+id/tvDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/galileo_description"
-            android:textSize="16sp"
-            android:textColor="#37474F"
-            android:lineSpacingExtra="4dp" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
